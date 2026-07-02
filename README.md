@@ -1,9 +1,33 @@
-<img width="1361" height="672" alt="Screenshot 2026-07-02 233531" src="https://github.com/user-attachments/assets/da3fc43f-39d7-480c-83d8-0bbaf1b77bb2" />
 # Interviewer.AI — Next-Gen AI Mock Interview & Coding Practice Platform
 
 Interviewer.AI is a premium, production-ready SaaS platform that helps software engineers prepare for technical interviews at top-tier product companies. By leveraging Google Gemini AI, Web Speech APIs, and the Monaco Editor, candidates can simulate realistic behavioral, technical, and coding interview rounds.
 
 ![Dashboard Preview](./public/dashboard_screenshot.png)
+
+---
+
+## 📸 Feature Tour
+
+### 1. Analytics & Insights Dashboard
+Track your performance progression trend line, company-specific rating averages, weaknesses, strengths, and weekly streaks.
+![Analytics Preview](./public/analytics.png)
+
+### 2. Monaco Coding Practice Sandbox
+Write code directly in JavaScript, Python, Java, or C++, run test cases locally, and get instant time/space complexity AI audits.
+![Coding Sandbox Preview](./public/coding_sandbox.png)
+
+### 3. Gamified Achievements Profile
+Review your account summary, completed mocks counts, average scores, and unlock badges like "Google Ready" or "Amazon Ready".
+![Candidate Profile Preview](./public/profile.png)
+
+### 4. Seamless Onboarding & Authentication
+Safe and beautiful login and sign-up portals with custom-synchronized password visibility toggles.
+<table>
+  <tr>
+    <td width="50%"><strong>Sign In Portal</strong><br/><img src="./public/sign_in.png" alt="Sign In"/></td>
+    <td width="50%"><strong>Sign Up Portal</strong><br/><img src="./public/sign_up.png" alt="Sign Up"/></td>
+  </tr>
+</table>
 
 ---
 
