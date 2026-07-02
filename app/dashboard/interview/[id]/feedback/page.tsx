@@ -7,6 +7,7 @@ import Link from "next/link";
 import { ChevronLeft, Home, Award, CheckCircle, AlertTriangle, BookOpen, User, Star, Sparkles, BookOpenCheck, Zap } from "lucide-react";
 import PrintButton from "./PrintButton"; // We will create this small client component to invoke window.print()
 
+export const dynamic = "force-dynamic";
 export const revalidate = 0; // Dynamic page
 
 interface PageProps {

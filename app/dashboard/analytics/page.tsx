@@ -6,6 +6,7 @@ import { redirect } from "next/navigation";
 import Link from "next/link";
 import { ChevronLeft, BarChart3, TrendingUp, Award, Flame, ShieldAlert, Cpu, Sparkles, BookOpenCheck } from "lucide-react";
 
+export const dynamic = "force-dynamic";
 export const revalidate = 0; // Dynamic server component
 
 export default async function AnalyticsPage() {

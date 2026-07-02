@@ -5,6 +5,7 @@ import Link from "next/link";
 import { Calendar, Award, CheckSquare, ListPlus, ArrowRight, Play, FileText, BrainCircuit, Star, Clock, TrendingUp, Mail, User } from "lucide-react";
 import Image from "next/image";
 
+export const dynamic = "force-dynamic";
 export const revalidate = 0; // Dynamic server component
 
 export default async function DashboardPage() {

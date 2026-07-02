@@ -4,6 +4,7 @@ import { SignOutButton } from "@clerk/nextjs";
 import { Award, Sparkles, User, Mail, Calendar, LogOut, CheckCircle2, Trophy, Zap, Star } from "lucide-react";
 import Image from "next/image";
 
+export const dynamic = "force-dynamic";
 export const revalidate = 0; // Dynamic server page
 
 interface Badge {
