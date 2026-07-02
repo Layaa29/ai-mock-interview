@@ -1,36 +1,95 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Interviewer.AI — Next-Gen AI Mock Interview & Coding Practice Platform
 
-## Getting Started
+Interviewer.AI is a premium, production-ready SaaS platform that helps software engineers prepare for technical interviews at top-tier product companies. By leveraging Google Gemini AI, Web Speech APIs, and the Monaco Editor, candidates can simulate realistic behavioral, technical, and coding interview rounds.
 
-First, run the development server:
+![Dashboard Preview](./public/dashboard_screenshot.png)
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+---
+
+## 🌟 Key Features
+
+### 1. Dynamic AI Mock Interviews
+*   **Interviewer Follow-ups**: In-simulation conversational logic where Gemini dynamically asks 1-sentence follow-up questions based on candidate answers to probe technical depth.
+*   **Dictation & Speech-to-Text**: Integration with standard Web Speech APIs (`SpeechRecognition`) for hands-free response recordings.
+*   **Timers & Controllers**: Individual count-up question timers, overall session count-down timers, and pause/resume triggers.
+
+### 2. Multi-Language Coding Sandbox
+*   **Monaco Editor Sandbox**: Sibling playground supporting JavaScript, Python, Java, and C++.
+*   **AI Complexity Reviewer**: Gemini performs structural code compilations, parses edge cases, and provides instant $O(N)$ Time & Space complexity audits.
+
+### 3. Smart Resume Parsing & Customizer
+*   **Resume Parser**: Extracts structured details (Skills, Projects, Education, Experience) from resume context to save directly in the database (`resumeAnalysis`).
+*   **Copy-Paste Customizer**: Form-level textarea enabling candidates to paste resume contexts or review/edit parsed text directly.
+
+### 4. Interactive Analytics & Badges
+*   **Progress Charts**: SVG charts tracing rating progression lines, category averages, and company ratios.
+*   **Streak Metrics & Streaks**: Weekly mock practice trackers with weakest topic notifications.
+*   **Gamified Badges**: Unlocked achievements based on completed sessions (e.g. "First Step", "Google Ready", "Amazon Ready").
+
+### 5. Multi-factor Feedback & Exports
+*   **Detailed Scores**: Breakdown metrics for Technical depth, Communication, Grammar, Confidence, Problem Solving, and Professionalism.
+*   **PDF Exporter**: Clean media print layout to download and save feedback reports.
+
+---
+
+## 💻 Tech Stack
+
+*   **Framework**: Next.js 16 (App Router)
+*   **UI Library**: React 19, Tailwind CSS, Radix UI, lucide-react
+*   **Database & ORM**: Neon PostgreSQL, Drizzle ORM
+*   **Authentication**: Clerk Authentication
+*   **AI Models**: Google Gemini AI (`gemini-1.5-flash`)
+*   **Code Sandbox**: Monaco Editor (`@monaco-editor/react`)
+
+---
+
+## ⚙️ Environment Setup
+
+To run this application locally, create a `.env.local` file in the root directory and add the following keys:
+
+```env
+# Database Credentials
+DATABASE_URL=your_neon_postgresql_connection_string
+
+# Google Gemini API
+GEMINI_API_KEY=your_gemini_api_key
+
+# Clerk Authentication
+NEXT_PUBLIC_CLERK_PUBLISHABLE_KEY=your_clerk_publishable_key
+CLERK_SECRET_KEY=your_clerk_secret_key
+NEXT_PUBLIC_CLERK_SIGN_IN_URL=/sign-in
+NEXT_PUBLIC_CLERK_SIGN_UP_URL=/sign-up
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+*Note: If the `DATABASE_URL` is set to the default placeholder (`neon_host_placeholder`), the application automatically short-circuits to local high-fidelity mock data so you can preview the platform immediately.*
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+---
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+## 🚀 Setup Instructions
 
-## Learn More
+1.  **Clone the Repository**:
+    ```bash
+    git clone https://github.com/your-username/ai-mock-interview.git
+    cd ai-mock-interview
+    ```
 
-To learn more about Next.js, take a look at the following resources:
+2.  **Install Dependencies**:
+    ```bash
+    npm install
+    ```
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+3.  **Run Migrations**:
+    ```bash
+    npm run db:push
+    ```
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+4.  **Launch Local Development Server**:
+    ```bash
+    npm run dev
+    ```
 
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+5.  **Build for Production**:
+    ```bash
+    npm run build
+    npm run start
+    ```
