@@ -1,3 +1,4 @@
+<img width="1361" height="672" alt="Screenshot 2026-07-02 233531" src="https://github.com/user-attachments/assets/da3fc43f-39d7-480c-83d8-0bbaf1b77bb2" />
 # Interviewer.AI — Next-Gen AI Mock Interview & Coding Practice Platform
 
 Interviewer.AI is a premium, production-ready SaaS platform that helps software engineers prepare for technical interviews at top-tier product companies. By leveraging Google Gemini AI, Web Speech APIs, and the Monaco Editor, candidates can simulate realistic behavioral, technical, and coding interview rounds.
